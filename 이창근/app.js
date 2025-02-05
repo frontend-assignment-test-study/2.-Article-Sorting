@@ -17,6 +17,36 @@ function App({ articles }) {
   const handleMostRecent = () => { 
     setArticlesState([...articles].sort((a, b) => new Date(b.date) - new Date(a.date)));
   };
+
+  // 역순 정렬 기능
+  // const [isSortedByUpvoted, setIsSortedByUpvoted] = useState(false);
+  // const [isSortedByDate, setIsSortedByDate] = useState(false);
+
+  // const handleMostUpvoted = () => {
+  //   if(isSortedByUpvoted) {
+  //     setArticlesState([...articlesState].sort((a, b) => a.upvotes - b.upvotes));
+  //     setIsSortedByUpvoted(false);
+  //     setIsSortedByDate(false);
+  //   }
+  //   else {
+  //     setArticlesState([...articlesState].sort((a, b) => b.upvotes - a.upvotes));
+  //     setIsSortedByUpvoted(true);
+  //     setIsSortedByDate(false);
+  //   }
+  // };
+
+  // const handleMostRecent = () => { 
+  //   if(isSortedByDate) {
+  //     setArticlesState([...articles].sort((a, b) => new Date(a.date) - new Date(b.date)));
+  //     setIsSortedByDate(false);
+  //     setIsSortedByUpvoted(false);
+  //   } else {
+  //     setArticlesState([...articles].sort((a, b) => new Date(b.date) - new Date(a.date)));
+  //     setIsSortedByDate(true);
+  //     setIsSortedByUpvoted(false);
+  //   }
+  // };
+  
   return (
     <>
       <h8k-navbar header="Sorting Articles"></h8k-navbar>
