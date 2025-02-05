@@ -38,7 +38,7 @@ function App({ articles }) {
           <button
             data-testid="most-upvoted-link"
             className="small"
-            onClick={handleMostUpvoted()}
+            onClick={handleMostUpvoted}
           >
             Most Upvoted
           </button>
